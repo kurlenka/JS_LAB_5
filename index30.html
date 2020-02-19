@@ -9,6 +9,13 @@
     <script>
         var x = prompt('Введите число x:');
         var y = prompt('Введите число y:');
+        if (x <= 0 || y <= 0 || Number.isNaN(x) || Number.isNaN(y)) {
+            alert('Вы указали неверное значение!');
+            exit;
+        }
+
+
+
         var z = +x;
         var i = 2;
         while (i <= y) {
