@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Пример 30</title>
+</head>
+
+<body>
+    <script>
+        var x = prompt('Введите число x:');
+        var y = prompt('Введите число y:');
+        if (x < 0 || y < 0 || Number.isNaN(x) || Number.isNaN(y)) {
+            alert('Вы указали неверное значение!');
+            exit;
+        }
+
+
+
+        var z = +x;
+        var i = 2;
+        while (i <= y) {
+            z = z * x;
+            i++
+        }
+        alert('Число ' + x + ' в степени ' + y + ' равно ' + z);
+
+    </script>
+</body>
+
+</html>
